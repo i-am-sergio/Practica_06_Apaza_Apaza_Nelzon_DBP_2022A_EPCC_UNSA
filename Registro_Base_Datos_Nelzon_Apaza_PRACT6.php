@@ -7,6 +7,11 @@
 <?php
     // Cargamos la base de datos
     include('Class_base_datos_Nelzon_Apaza.php');
+    $DB_HOST = $_ENV["DB_HOST"];
+    $DB_USER = $_ENV["DB_USER"];
+    $DB_PASSWORD = $_ENV["DB_PASSWORD"];
+    $DB_NAME = $_ENV["DB_NAME"];
+    $DB_PORT = $_ENV["DB_PORT"];
 
     //PARTE DE COOKIES para el color de Fondo:-----
     if (isset($_COOKIE['colorFondo'])) {
@@ -76,7 +81,8 @@
         <tbody id="contenido"><!--para AJAX-->
             <?php
                 // ESTA PARTE TIENE QUE VER CON LA CLASE CREADA
-                $BaseDatos=new base_datos("localhost","root","administrador","lab06_data_base_dbp");//trabajamos con la base de datos creda anteriormente
+                $BaseDatos = new base_datos("$DB_HOST","$DB_USER","$DB_PASSWORD","$DB_NAME");
+                // $BaseDatos=new base_datos("localhost","root","administrador","lab06_data_base_dbp");//trabajamos con la base de datos creda anteriormente
                 $BaseDatos->conectar();
 
                 if ($_SERVER["REQUEST_METHOD"]=="POST") {
