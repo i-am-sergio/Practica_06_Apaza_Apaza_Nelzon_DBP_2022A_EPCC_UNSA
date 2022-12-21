@@ -1,0 +1,71 @@
+/* 
+    ALUMNO: Nelzon Jorge Apaza Apaza
+    CUI: 20190652 
+    CURSO: DBP - GRUPO A - Laboratorio 6
+*/
+h2 {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: black 5px 3px 4px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(172, 0, 29);
+    padding: 7px;
+
+}
+
+body {
+    font-size: 15px;
+    /* background-image: url(https://i.pinimg.com/originals/35/eb/7d/35eb7d5bce221d9392feb1e426ba48af.jpg); */
+    margin: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Para la parte de llenar datos */
+
+.relleno {
+    text-align: center;
+    font-family: sans-serif;
+    /*CUADRO*/
+    margin: 0 auto;
+
+}
+
+.col_50 {
+    margin: 0 auto;
+    width: 500px;
+    padding: 1.5px;
+
+}
+
+.campos {
+    margin: 1px;
+    width: 220px;
+    text-align: center;
+}
+
+/* TABLA PARA MOSTRAR DATOS */
+#tablaUsuarios {
+    margin:0 auto;
+    font-size: 30px;
+    font-family: fantasy;
+}
+
+th {
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(172, 0, 29);
+    text-shadow: black 5px 3px 4px;
+    color: white;
+    padding: 7px;
+}
+
+td {
+    text-align: left;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 7px;
+}
