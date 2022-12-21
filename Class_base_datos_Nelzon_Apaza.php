@@ -9,18 +9,20 @@
         private $usua;
         private $pass;
         private $bd;
+        private $port;
 
         private $conexion;
 
-        function __construct($host,$usua,$pass,$bd){
+        function __construct($host,$usua,$pass,$bd,$port){
             $this->host=$host;
             $this->usua=$usua;
             $this->pass=$pass;
             $this->bd=$bd;
+            $this->port=$port;
         }
         //Función para conectar clientes
         function conectar(){
-            $this->conexion=mysqli_connect($this->host,$this->usua,$this->pass,$this->bd);
+            $this->conexion=mysqli_connect($this->host,$this->usua,$this->pass,$this->bd,$this->port);
             $this->conexion->set_charset("utf8");
             if (mysqli_connect_errno()) {//en el caso de que ocurra un error al conectarnos
                 echo "Error al conectarse";
